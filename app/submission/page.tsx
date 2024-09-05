@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
@@ -5,9 +7,30 @@ import { Button } from "@nextui-org/button";
 import { Input } from "@nextui-org/input";
 import { Textarea } from "@nextui-org/input";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
-import { useForm } from 'react-hook-form';
 
 export default function SubmissionPage() {
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        access_key: process.env.WEB3FORM_ACCESS_KEY,
+        //process.env.WEB3FORM_ACCESS_KEY,
+        name: e.target.name.value,
+        email: e.target.email.value,
+        message: e.target.message.value,
+      }),
+    });
+    const result = await response.json();
+    if (result.success) {
+      console.log(result);
+    }
+  }
+
+  // Form UI
   return (
     <>
       <Navbar />
@@ -22,7 +45,7 @@ export default function SubmissionPage() {
             </div>
           </CardHeader>
           <CardBody>
-            <form className="space-y-4 mb-4">
+            <form onSubmit={handleSubmit} className="space-y-4 mb-4">
               <h2 className="my-4 font-semibold">Your Personal Details</h2>
               <Input
                 isClearable
@@ -39,8 +62,7 @@ export default function SubmissionPage() {
                 label="Email"
                 placeholder="Enter your email"
               />
-            </form>
-            <form className="space-y-4 mb-4">
+
               <h2 className="my-4 font-semibold">Lab Details</h2>
               <Input
                 isClearable
@@ -50,12 +72,14 @@ export default function SubmissionPage() {
                 label="Lab Name"
                 placeholder="Enter the lab name"
               />
+
               <Textarea
                 isRequired
                 label="Lab Description"
                 placeholder="Enter the lab description"
                 className="max-w-xl"
               />
+
               <Input
                 isClearable
                 size="md"
@@ -64,10 +88,13 @@ export default function SubmissionPage() {
                 placeholder="Enter the lab website link"
                 startContent={
                   <div className="pointer-events-none flex items-center">
-                    <span className="text-default-400 text-small">https://</span>
+                    <span className="text-default-400 text-small">
+                      https://
+                    </span>
                   </div>
                 }
               />
+
               <Input
                 isClearable
                 size="md"
@@ -76,15 +103,22 @@ export default function SubmissionPage() {
                 placeholder="Enter the lab GitHub link"
                 startContent={
                   <div className="pointer-events-none flex items-center">
-                    <span className="text-default-400 text-small">https://</span>
+                    <span className="text-default-400 text-small">
+                      https://
+                    </span>
                   </div>
                 }
               />
+              <CardFooter className="flex justify-center pt-6">
+                <Button
+                  className="w-full sm:w-auto bg-black text-white"
+                  type="submit"
+                >
+                  Submit Lab
+                </Button>
+              </CardFooter>
             </form>
           </CardBody>
-          <CardFooter className="flex justify-center pt-6">
-            <Button className="w-full sm:w-auto bg-black text-white">Submit Lab</Button>
-          </CardFooter>
         </Card>
       </main>
       <Footer />
