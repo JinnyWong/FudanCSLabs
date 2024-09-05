@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import { Input } from "@nextui-org/react";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 
