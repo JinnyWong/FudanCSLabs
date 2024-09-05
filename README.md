@@ -8,6 +8,8 @@ A collection of computer science related research labs at Fudan University.
 - TypeScript
 - Tailwind CSS
 - NextUI
+- React Icons
+
 
 ## Contributing
 1. Git clone this repository

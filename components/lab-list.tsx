@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@nextui-org/button";
+import { CiGlobe } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
 
 export default function LabList() {
   return (
@@ -16,7 +18,7 @@ export default function LabList() {
 
       <div className="container grid grid-cols-1 gap-8 p-4 md:grid-cols-2 lg:grid-cols-2 lg:p-8 xl:gap-12">
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
-          <img
+          <Image
             src="/labs/fudan-disc.png"
             alt="Project Thumbnail"
             width={600}
@@ -36,17 +38,17 @@ export default function LabList() {
             </p>
           </div>
           <div className="flex items-center justify-center text-center space-x-10">
-            <Button color="default" variant="flat">
+            <Button color="default" variant="flat" startContent={<CiGlobe/>}>
               <Link href="http://fudan-disc.com">Website</Link>
             </Button>
-            <Button color="default" variant="flat">
+            <Button color="default" variant="flat" startContent={<FaGithub />}>
               <Link href="https://github.com/FudanDISC">GitHub</Link>
             </Button>
           </div>
         </div>
 
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
-          <img
+          <Image
             src="/labs/fudan-cisl.png"
             alt="Project Thumbnail"
             width={600}
@@ -66,43 +68,17 @@ export default function LabList() {
           </div>
 
           <div className="flex items-center justify-center text-center space-x-10">
-            <Button color="default" variant="flat">
+            <Button color="default" variant="flat" startContent={<CiGlobe/>}>
               <Link href="https://cscw.fudan.edu.cn/">Website</Link>
             </Button>
-            <Button color="default" variant="flat">
+            <Button color="default" variant="flat" startContent={<FaGithub/>}>
               <Link href="https://github.com/FudanCISL">GitHub</Link>
-            </Button>
-          </div>
-        </div>
-
-        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
-          <img
-            src="/labs/fudan-fusion.png"
-            alt="Project Thumbnail"
-            width={600}
-            height={400}
-            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
-            style={{ aspectRatio: "600/400", objectFit: "contain" }}
-          />
-          <div className="bg-background p-4">
-            <h3 className="text-xl font-semibold">Fudan Fusion Lab</h3>
-            <p className="mt-2 text-gray-500">
-            The Generative Vision Lab of Fudan University (Fusion Lab) is led by Professor Siyu Zhu. Its research interests mainly focus on generative model for video and 3D.
-            </p>
-          </div>
-
-          <div className="flex items-center justify-center text-center space-x-10">
-            <Button color="default" variant="flat">
-              <Link href="https://sites.google.com/site/zhusiyucs">Website</Link>
-            </Button>
-            <Button color="default" variant="flat">
-              <Link href="https://github.com/fudan-generative-vision">GitHub</Link>
             </Button>
           </div>
         </div>  
 
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
-          <img
+          <Image
             src="/labs/fudan-fvl.png"
             alt="Project Thumbnail"
             width={600}
@@ -118,14 +94,14 @@ export default function LabList() {
           </div>
 
           <div className="flex items-center justify-center text-center space-x-10">
-            <Button color="default" variant="flat">
+            <Button color="default" variant="flat" startContent={<CiGlobe/>}>
               <Link href="https://fvl.fudan.edu.cn/main.htm">Website</Link>
             </Button>
           </div>
         </div>
 
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
-          <img
+          <Image
             src="/labs/fudan-codewisdom.png"
             alt="Project Thumbnail"
             width={600}
@@ -141,20 +117,46 @@ export default function LabList() {
           </div>
 
           <div className="flex items-center justify-center text-center space-x-10">
-            <Button color="default" variant="flat">
+            <Button color="default" variant="flat" startContent={<CiGlobe/>}>
               <Link href="https://fudanselab.github.io/">Website 1</Link>
             </Button>
-            <Button color="default" variant="flat">
+            <Button color="default" variant="flat" startContent={<CiGlobe/>}>
               <Link href="http://www.se.fudan.edu.cn/">Website 2</Link>
             </Button>
-            <Button color="default" variant="flat">
+            <Button color="default" variant="flat" startContent={<FaGithub/>}>
               <Link href="#">GitHub</Link>
             </Button>
           </div>
         </div>
 
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
-          <img
+          <Image
+            src="/labs/fudan-fusion.png"
+            alt="Project Thumbnail"
+            width={600}
+            height={400}
+            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
+            style={{ aspectRatio: "600/400", objectFit: "contain" }}
+          />
+          <div className="bg-background p-4">
+            <h3 className="text-xl font-semibold">Fudan Fusion Lab</h3>
+            <p className="mt-2 text-gray-500">
+            The Generative Vision Lab of Fudan University (Fusion Lab) is led by Professor Siyu Zhu. Its research interests mainly focus on generative model for video and 3D.
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center text-center space-x-10">
+            <Button color="default" variant="flat" startContent={<CiGlobe/>}>
+              <Link href="https://sites.google.com/site/zhusiyucs">Website</Link>
+            </Button>
+            <Button color="default" variant="flat" startContent={<FaGithub/>}>
+              <Link href="https://github.com/fudan-generative-vision">GitHub</Link>
+            </Button>
+          </div>
+        </div>
+
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
+          <Image
             src="/labs/fudan-secsys.png"
             alt="Project Thumbnail"
             width={600}
@@ -170,17 +172,17 @@ export default function LabList() {
           </div>
 
           <div className="flex items-center justify-center text-center space-x-10">
-            <Button color="default" variant="flat">
+            <Button color="default" variant="flat" startContent={<CiGlobe/>}>
               <Link href="https://secsys.fudan.edu.cn/main.htm">Website</Link>
             </Button>
-            <Button color="default" variant="flat">
+            <Button color="default" variant="flat" startContent={<FaGithub/>}>
               <Link href="https://github.com/seclab-fudan">GitHub</Link>
             </Button>
           </div>
         </div>
 
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
-          <img
+          <Image
             src="/labs/fudan-blockchain.png"
             alt="Project Thumbnail"
             width={600}
@@ -196,14 +198,14 @@ export default function LabList() {
           </div>
 
           <div className="flex items-center justify-center text-center space-x-10">
-            <Button color="default" variant="flat">
+            <Button color="default" variant="flat" startContent={<FaGithub/>}>
               <Link href="https://github.com/BlockchainLabFudan">GitHub</Link>
             </Button>
           </div>
         </div>
 
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
-          <img
+          <Image
             src="/labs/fudan-mas.png"
             alt="Project Thumbnail"
             width={600}
@@ -219,17 +221,17 @@ export default function LabList() {
           </div>
 
           <div className="flex items-center justify-center text-center space-x-10">
-            <Button color="default" variant="flat">
+            <Button color="default" variant="flat" startContent={<CiGlobe/>}>
               <Link href="https://fdmas.github.io/">Website</Link>
             </Button>
-            <Button color="default" variant="flat">
+            <Button color="default" variant="flat" startContent={<FaGithub/>}>
               <Link href="https://github.com/fdmas">GitHub</Link>
             </Button>
           </div>
         </div>
 
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
-          <img
+          <Image
             src="/labs/fudan-mv.png"
             alt="Project Thumbnail"
             width={600}
@@ -245,40 +247,17 @@ export default function LabList() {
           </div>
 
           <div className="flex items-center justify-center text-center space-x-10">
-            <Button color="default" variant="flat">
+            <Button color="default" variant="flat" startContent={<CiGlobe/>}>
               <Link href="https://fudanmv.github.io/">Website</Link>
             </Button>
-            <Button color="default" variant="flat">
+            <Button color="default" variant="flat" startContent={<FaGithub/>}>
               <Link href="https://github.com/FudanMV">GitHub</Link>
             </Button>
           </div>
         </div>
 
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
-          <img
-            src="/labs/fudan-vi.png"
-            alt="Project Thumbnail"
-            width={600}
-            height={400}
-            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
-            style={{ aspectRatio: "600/400", objectFit: "contain" }}
-          />
-          <div className="bg-background p-4">
-            <h3 className="text-xl font-semibold">Fudan Visual Intelligence Lab</h3>
-            <p className="mt-2 text-gray-500">
-            Fudan Visual Intelligence Lab Visual Intelligence does research in the integration of visual information processing with intelligence in image and graphics research. 
-            </p>
-          </div>
-
-          <div className="flex items-center justify-center text-center space-x-10">
-            <Button color="default" variant="flat">
-              <Link href="https://github.com/FudanVI">GitHub</Link>
-            </Button>
-          </div>
-        </div>
-
-        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
-          <img
+          <Image
             src="/labs/fudan-artisan.png"
             alt="Project Thumbnail"
             width={600}
@@ -294,17 +273,40 @@ export default function LabList() {
           </div>
 
           <div className="flex items-center justify-center text-center space-x-10">
-          <Button color="default" variant="flat">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
               <Link href="https://artisan-lab.github.io/">Website</Link>
             </Button>
-            <Button color="default" variant="flat">
+            <Button color="default" variant="flat" startContent={<FaGithub/>}>
               <Link href="https://github.com/Artisan-Lab">GitHub</Link>
             </Button>
           </div>
         </div>
 
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
-          <img
+          <Image
+            src="/labs/fudan-vi.png"
+            alt="Project Thumbnail"
+            width={600}
+            height={400}
+            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
+            style={{ aspectRatio: "600/400", objectFit: "contain" }}
+          />
+          <div className="bg-background p-4">
+            <h3 className="text-xl font-semibold">Fudan Visual Intelligence Lab</h3>
+            <p className="mt-2 text-gray-500">
+            Fudan Visual Intelligence Lab Visual Intelligence does research in the integration of visual information processing with intelligence in image and graphics research. 
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center text-center space-x-10">
+            <Button color="default" variant="flat" startContent={<FaGithub/>}>
+              <Link href="https://github.com/FudanVI">GitHub</Link>
+            </Button>
+          </div>
+        </div>
+
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
+          <Image
             src="/labs/fudan-soaring.png"
             alt="Project Thumbnail"
             width={600}
@@ -320,17 +322,17 @@ export default function LabList() {
           </div>
 
           <div className="flex items-center justify-center text-center space-x-10">
-          <Button color="default" variant="flat">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
               <Link href="https://soaringlab.top/">Website</Link>
             </Button>
-            <Button color="default" variant="flat">
+            <Button color="default" variant="flat" startContent={<FaGithub/>}>
               <Link href="https://github.com/SOARingLab">GitHub</Link>
             </Button>
           </div>
         </div>
 
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
-          <img
+          <Image
             src="/labs/fudan-nlp.png"
             alt="Project Thumbnail"
             width={600}
@@ -346,17 +348,17 @@ export default function LabList() {
           </div>
 
           <div className="flex items-center justify-center text-center space-x-10">
-          <Button color="default" variant="flat">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
               <Link href="https://nlp.fudan.edu.cn/">Website</Link>
             </Button>
-            <Button color="default" variant="flat">
+            <Button color="default" variant="flat" startContent={<FaGithub/>}>
               <Link href="https://github.com/FudanNLP">GitHub</Link>
             </Button>
           </div>
         </div>
 
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
-          <img
+          <Image
             src="/labs/fudan-zhang.png"
             alt="Project Thumbnail"
             width={600}
@@ -372,10 +374,10 @@ export default function LabList() {
           </div>
 
           <div className="flex items-center justify-center text-center space-x-10">
-          <Button color="default" variant="flat">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
               <Link href="https://fudan-zvg.github.io">Website</Link>
             </Button>
-            <Button color="default" variant="flat">
+            <Button color="default" variant="flat" startContent={<FaGithub/>}>
               <Link href="https://github.com/fudan-zvg">GitHub</Link>
             </Button>
           </div>

@@ -20,12 +20,12 @@ const Navbar: React.FC = () => {
           Fudan CS Labs
         </Link>
         <div className="flex space-x-10">
-          <Link href="/submission" className="text-black hover:text-gray-300">
+          <Link href="/submission" className="text-black font-semibold hover:text-gray-300">
             Submit a Lab
           </Link> 
           <Link
             href="https://www.fudan.edu.cn/en/2019/0515/c295a96709/page.htm"
-            className="text-black hover:text-gray-300"
+            className="text-black font-semibold hover:text-gray-300"
           >
             Fudan CS →
           </Link>
