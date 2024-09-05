@@ -9,7 +9,7 @@ import { Textarea } from "@nextui-org/input";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 
 export default function SubmissionPage() {
-  async function handleSubmit(e) {
+  async function handleSubmit(e: { preventDefault: () => void; target: { name: { value: any; }; email: { value: any; }; message: { value: any; }; }; }) {
     e.preventDefault();
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
