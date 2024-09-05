@@ -1,39 +1,37 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
+import { useForm, ValidationError } from '@formspree/react';
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import { Button } from "@nextui-org/button";
 import { Input } from "@nextui-org/input";
 import { Textarea } from "@nextui-org/input";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  useDisclosure
+} from "@nextui-org/modal";
 
-export default function SubmissionPage() {
-  async function handleSubmit(e: { preventDefault: () => void; target: { name: { value: any; }; email: { value: any; }; message: { value: any; }; }; }) {
-    e.preventDefault();
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        access_key: process.env.WEB3FORM_ACCESS_KEY,
-        //process.env.WEB3FORM_ACCESS_KEY,
-        name: e.target.name.value,
-        email: e.target.email.value,
-        message: e.target.message.value,
-      }),
-    });
-    const result = await response.json();
-    if (result.success) {
-      console.log(result);
-    }
-  }
+export default function SubmissionForm() {
+  // Modal state 
+  const {isOpen, onOpen, onOpenChange} = useDisclosure();
 
-  // Form UI
+  // Formspree
+  const [state, handleSubmit] = useForm("xzzpwvad");
+    // if (state.succeeded) {
+    //   return <p>Thank you for your submission!</p>;
+    // }
+
+  // Submission Form UI
   return (
     <>
       <Navbar />
+
       <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-white">
         <Card className="p-6">
           <CardHeader className="mb-2">
@@ -52,17 +50,18 @@ export default function SubmissionPage() {
                 size="md"
                 type="text"
                 label="Name"
+                name="Name"
                 placeholder="Enter your name"
-                description="Leave this blank if you will like to contribute anonymously."
+                description="Leave this blank if you would like to contribute anonymously."
               />
               <Input
                 isClearable
                 size="md"
                 type="email"
                 label="Email"
+                name="Email"
                 placeholder="Enter your email"
               />
-
               <h2 className="my-4 font-semibold">Lab Details</h2>
               <Input
                 isClearable
@@ -70,12 +69,14 @@ export default function SubmissionPage() {
                 size="md"
                 type="text"
                 label="Lab Name"
+                name="Lab Name"
                 placeholder="Enter the lab name"
               />
 
               <Textarea
                 isRequired
                 label="Lab Description"
+                name="Lab Description"
                 placeholder="Enter the lab description"
                 className="max-w-xl"
               />
@@ -85,6 +86,7 @@ export default function SubmissionPage() {
                 size="md"
                 type="url"
                 label="Lab Website"
+                name="Lab Website"
                 placeholder="Enter the lab website link"
                 startContent={
                   <div className="pointer-events-none flex items-center">
@@ -100,6 +102,7 @@ export default function SubmissionPage() {
                 size="md"
                 type="url"
                 label="Lab GitHub"
+                name="Lab Github"
                 placeholder="Enter the lab GitHub link"
                 startContent={
                   <div className="pointer-events-none flex items-center">
@@ -113,9 +116,27 @@ export default function SubmissionPage() {
                 <Button
                   className="w-full sm:w-auto bg-black text-white"
                   type="submit"
+                  onPress={onOpen}
+                  disabled={state.submitting}
                 >
                   Submit Lab
                 </Button>
+                <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+                  <ModalContent>
+                    {(onClose) => (
+                      <>
+                        <ModalHeader className="flex flex-col gap-1">
+                          Successfully submitted the lab! 
+                        </ModalHeader>
+                        <ModalBody>
+                          <p className="my-4">
+                            Thank you for your contribution :) This will greatly help with the Fudan CS Labs project. We will review your submission and update it to the website later.
+                          </p>
+                        </ModalBody>
+                      </>
+                    )}
+                  </ModalContent>
+                </Modal>
               </CardFooter>
             </form>
           </CardBody>

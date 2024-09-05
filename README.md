@@ -9,7 +9,7 @@ A collection of computer science related research labs at Fudan University.
 - Tailwind CSS
 - NextUI
 - React Icons
-
+- Formspree
 
 ## Contributing
 1. Git clone this repository
