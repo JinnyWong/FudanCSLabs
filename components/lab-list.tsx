@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@nextui-org/react";
+import { Button } from "@nextui-org/button";
 
 export default function LabList() {
   return (
@@ -186,7 +186,7 @@ export default function LabList() {
             width={600}
             height={400}
             className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
-            style={{ aspectRatio: "600/400", objectFit: "cover" }}
+            style={{ aspectRatio: "600/400", objectFit: "contain" }}
           />
           <div className="bg-background p-4">
             <h3 className="text-xl font-semibold">Fudan Blockchain & Information Security Lab</h3>
@@ -351,6 +351,32 @@ export default function LabList() {
             </Button>
             <Button color="default" variant="flat">
               <Link href="https://github.com/FudanNLP">GitHub</Link>
+            </Button>
+          </div>
+        </div>
+
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
+          <img
+            src="/labs/fudan-zhang.png"
+            alt="Project Thumbnail"
+            width={600}
+            height={400}
+            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
+            style={{ aspectRatio: "600/400", objectFit: "cover" }}
+          />
+          <div className="bg-background p-4">
+            <h3 className="text-xl font-semibold">Fudan Zhang Vision Group</h3>
+            <p className="mt-2 text-gray-500">
+            Fudan Zhang Vision Group is led by professor Li Zhang, under the School of Data Science at Fudan University. Their research interests cover the broad area of machine learning and artificial intelligence, with special emphasis on building intelligent systems for autonomous driving and generalist embodied agent.
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center text-center space-x-10">
+          <Button color="default" variant="flat">
+              <Link href="https://fudan-zvg.github.io">Website</Link>
+            </Button>
+            <Button color="default" variant="flat">
+              <Link href="https://github.com/fudan-zvg">GitHub</Link>
             </Button>
           </div>
         </div>
