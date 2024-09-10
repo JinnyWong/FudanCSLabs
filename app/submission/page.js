@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { useForm, ValidationError } from '@formspree/react';
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
@@ -117,7 +117,6 @@ export default function SubmissionForm() {
                   className="w-full sm:w-auto bg-black text-white"
                   type="submit"
                   onPress={onOpen}
-                  disabled={state.submitting}
                 >
                   Submit Lab
                 </Button>
