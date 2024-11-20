@@ -383,6 +383,173 @@ export default function LabList() {
           </div>
         </div>
 
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
+          <Image
+            src="/labs/shanghai-keylab.png"
+            alt="Project Thumbnail"
+            width={600}
+            height={400}
+            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
+            style={{ aspectRatio: "600/400", objectFit: "cover" }}
+          />
+          <div className="bg-background p-4">
+            <h3 className="text-xl font-semibold">Shanghai Key Lab of Intelligent Information Processing</h3>
+            <p className="mt-2 text-gray-500">
+            The Shanghai Key Lab of Intelligent Information Processing focuses on intelligent information processing, with the main task of improving the deep semantic understanding and adaptive autonomous decision-making ability of machines facing the complex real world. Topics include NLP and LLMs, Video Intelligent Computing, Cross-Media Intelligent Computing, Intelligent Networks and Intelligent Systems, Intelligence in Science (AI4S), Intelligence Theory and Frontier Crossover, and carries out the application and transformation of the results in the key fields of Robotics, Intelligent Medical Care, Intelligent Culture and Tourism, and Basic Science.
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center text-center space-x-10">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
+              <Link href="https://iipl.fudan.edu.cn/main.htm">Website</Link>
+          </Button>
+          </div>
+        </div>
+
+
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
+          <Image
+            src="/labs/fudan-zmic.png"
+            alt="Project Thumbnail"
+            width={600}
+            height={400}
+            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
+            style={{ aspectRatio: "600/400", objectFit: "cover" }}
+          />
+          <div className="bg-background p-4">
+            <h3 className="text-xl font-semibold">Fudan ZMIC Lab</h3>
+            <p className="mt-2 text-gray-500">
+            Fudan ZMIC Lab is a research group led by Prof. Xiahai Zhuang at School of Data Science, Fudan University. The lab aims at joining forces to research and translate AI algorithms for applications, including computer vision, clinical diagnosis and therapy. Their research mainly involves medical image analysis, image processing, machine learning and computer vision.
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center text-center space-x-10">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
+              <Link href="https://zmiclab.github.io/index.html">Website</Link>
+          </Button>
+          <Button color="default" variant="flat" startContent={<FaGithub/>}>
+              <Link href="https://github.com/ZMICLab">GitHub</Link>
+            </Button>
+          </div>
+        </div>
+
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
+          <Image
+            src="/labs/fudan-roi.png"
+            alt="Project Thumbnail"
+            width={600}
+            height={400}
+            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
+            style={{ aspectRatio: "600/400", objectFit: "cover" }}
+          />
+          <div className="bg-background p-4">
+            <h3 className="text-xl font-semibold">Fudan Lab of Robotics Oriented Intelligence</h3>
+            <p className="mt-2 text-gray-500">
+            Fudan ROI Lab focuses on researching computational vision, knowledge graphs and robotics oriented intelligence.
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center text-center space-x-10">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
+              <Link href="https://www.fudanroilab.com/">Website</Link>
+          </Button>
+          </div>
+        </div>
+
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
+          <Image
+            src="/labs/fudan-ed.png"
+            alt="Project Thumbnail"
+            width={600}
+            height={400}
+            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
+            style={{ aspectRatio: "600/400", objectFit: "cover" }}
+          />
+          <div className="bg-background p-4">
+            <h3 className="text-xl font-semibold">Fudan Embedded Deep Learning and Visual Analysis Lab</h3>
+            <p className="mt-2 text-gray-500">
+            Fudan ED Lab focuses on research in lightweight deep learning study, multimodal deep learning research, embedded deep learning, visual computing and content analysis of images & videos.
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center text-center space-x-10">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
+              <Link href="https://eetchen.github.io/research/">Website</Link>
+          </Button>
+          </div>
+        </div>
+
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
+          <Image
+            src="/labs/fudan-csr.png"
+            alt="Project Thumbnail"
+            width={600}
+            height={400}
+            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
+            style={{ aspectRatio: "600/400", objectFit: "cover" }}
+          />
+          <div className="bg-background p-4">
+            <h3 className="text-xl font-semibold">Fudan Code Security Research Lab</h3>
+            <p className="mt-2 text-gray-500">
+            Fudan CSR Lab focuses on computer system security, covering vulnerability analysis, operating system security, web security, and mobile security. My group is dedicated to delivering effective and reliable security analysis and defense approaches and addressing the evolving challenges in the computer security world.
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center text-center space-x-10">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
+              <Link href="https://yang-guangliang.github.io/">Website</Link>
+          </Button>
+          <Button color="default" variant="flat" startContent={<FaGithub/>}>
+              <Link href="https://gitee.com/fudan-csr">GitHub</Link>
+            </Button>
+          </div>
+        </div>
+
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
+          <Image
+            src="/labs/fudan-vis.png"
+            alt="Project Thumbnail"
+            width={600}
+            height={400}
+            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
+            style={{ aspectRatio: "600/400", objectFit: "cover" }}
+          />
+          <div className="bg-background p-4">
+            <h3 className="text-xl font-semibold">Fudan Visualization Research Group</h3>
+            <p className="mt-2 text-gray-500">
+            Fudan VIS Lab focuses on general visualization and visual analytics techniques as well as human-centered artificial intelligence. Topics include large-language model-driven visual analytics, explainable AI, digital twin and storytelling techniques. Their research applications include FinTech, social network visual analytics, autonomous driving, security visual analytics and digital humanity.
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center text-center space-x-10">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
+              <Link href="https://fduvis.net/">Website</Link>
+          </Button>
+          </div>
+        </div>
+
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
+          <Image
+            src="/labs/fudan-jeffhong.png"
+            alt="Project Thumbnail"
+            width={600}
+            height={400}
+            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
+            style={{ aspectRatio: "600/400", objectFit: "cover" }}
+          />
+          <div className="bg-background p-4">
+            <h3 className="text-xl font-semibold">L. Jeff Hong's Research Group</h3>
+            <p className="mt-2 text-gray-500">
+              L.Jeff Hong's research group focuses on the areas of operations research, data science, and financial engineering and risk management. Interests include: Stochastic simulation and stochastic optimization, Data analytics, machine learning and business applications, Financial analytics and financial risk management and Large-scale supply chain modeling and optimization.
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center text-center space-x-10">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
+              <Link href="https://jeffhonglab.github.io/">Website</Link>
+          </Button>
+          </div>
+        </div>
 
       </div>
     </>
