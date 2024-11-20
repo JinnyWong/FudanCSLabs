@@ -409,7 +409,8 @@ export default function LabList() {
 
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
           <Image
-            src="/labs/fudan-zmic.png"
+            src="/labs/fudan-zmic.PNG
+            "
             alt="Project Thumbnail"
             width={600}
             height={400}
@@ -435,7 +436,7 @@ export default function LabList() {
 
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
           <Image
-            src="/labs/fudan-roi.png"
+            src="/labs/fudan-roi.PNG"
             alt="Project Thumbnail"
             width={600}
             height={400}
@@ -458,7 +459,7 @@ export default function LabList() {
 
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
           <Image
-            src="/labs/fudan-ed.png"
+            src="/labs/fudan-ed.PNG"
             alt="Project Thumbnail"
             width={600}
             height={400}
@@ -481,7 +482,7 @@ export default function LabList() {
 
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
           <Image
-            src="/labs/fudan-csr.png"
+            src="/labs/fudan-csr.PNG"
             alt="Project Thumbnail"
             width={600}
             height={400}
@@ -507,7 +508,7 @@ export default function LabList() {
 
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
           <Image
-            src="/labs/fudan-vis.png"
+            src="/labs/fudan-vis.PNG"
             alt="Project Thumbnail"
             width={600}
             height={400}
@@ -530,7 +531,7 @@ export default function LabList() {
 
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
           <Image
-            src="/labs/fudan-jeffhong.png"
+            src="/labs/fudan-jeffhong.PNG"
             alt="Project Thumbnail"
             width={600}
             height={400}
