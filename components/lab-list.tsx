@@ -518,7 +518,7 @@ export default function LabList() {
             <h3 className="text-xl font-semibold">Fudan Visualization Research Group</h3>
             <p className="mt-2 text-gray-500">
             Fudan VIS Lab focuses on general visualization and visual analytics techniques as well as human-centered artificial intelligence. Topics include large-language model-driven visual analytics, explainable AI, digital twin and storytelling techniques. Their research applications include FinTech, social network visual analytics, autonomous driving, security visual analytics and digital humanity.
-            </p>
+            </p>  
           </div>
 
           <div className="flex items-center justify-center text-center space-x-10">
@@ -538,7 +538,7 @@ export default function LabList() {
             style={{ aspectRatio: "600/400", objectFit: "cover" }}
           />
           <div className="bg-background p-4">
-            <h3 className="text-xl font-semibold">L. Jeff Hong's Research Group</h3>
+            <h3 className="text-xl font-semibold">L. Jeff Hong Research Group</h3>
             <p className="mt-2 text-gray-500">
               L.Jeff Hong's research group focuses on the areas of operations research, data science, and financial engineering and risk management. Interests include: Stochastic simulation and stochastic optimization, Data analytics, machine learning and business applications, Financial analytics and financial risk management and Large-scale supply chain modeling and optimization.
             </p>
