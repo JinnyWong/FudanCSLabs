@@ -409,8 +409,7 @@ export default function LabList() {
 
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
           <Image
-            src="/labs/fudan-zmic.PNG
-            "
+            src="/labs/fudan-zmic.PNG"
             alt="Project Thumbnail"
             width={600}
             height={400}
@@ -548,6 +547,29 @@ export default function LabList() {
           <div className="flex items-center justify-center text-center space-x-10">
           <Button color="default" variant="flat" startContent={<CiGlobe/>}>
               <Link href="https://jeffhonglab.github.io/">Website</Link>
+          </Button>
+          </div>
+        </div>
+
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
+          <Image
+            src="/labs/fudan-yes.PNG"
+            alt="Project Thumbnail"
+            width={600}
+            height={400}
+            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
+            style={{ aspectRatio: "600/400", objectFit: "cover" }}
+          />
+          <div className="bg-background p-4">
+            <h3 className="text-xl font-semibold">Fudan YesLab</h3>
+            <p className="mt-2 text-gray-500">
+              The Fudan YesLab led by Professor Guangnan Ye, conducts research in areas such as FinTech, embodied intelligence, computer vision, natural language processing, AI-driven drug discovery, and related fields.
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center text-center space-x-10">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
+              <Link href="http://124.221.93.6/home">Website</Link>
           </Button>
           </div>
         </div>
