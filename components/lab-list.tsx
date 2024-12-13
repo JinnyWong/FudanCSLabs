@@ -574,6 +574,176 @@ export default function LabList() {
           </div>
         </div>
 
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
+          <Image
+            src="/labs/fudan-dsg.PNG"
+            alt="Project Thumbnail"
+            width={600}
+            height={400}
+            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
+            style={{ aspectRatio: "600/400", objectFit: "cover" }}
+          />
+          <div className="bg-background p-4">
+            <h3 className="text-xl font-semibold">Fudan DSG Lab</h3>
+            <p className="mt-2 text-gray-500">
+              The Fudan Laboratory for Data Security and Governance does research in data security and privacy computing, and has constructed software platforms in secure multi-party learning frameworks and platforms, crypto-asset ecological regulation and innovative technologies, and user password security. 
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center text-center space-x-10">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
+              <Link href="https://dsg.fudan.edu.cn/">Website</Link>
+          </Button>
+          <Button color="default" variant="flat" startContent={<FaGithub/>}>
+            <Link href="https://github.com/FudanMPL">GitHub</Link>
+          </Button>
+          </div>
+        </div>
+
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
+          <Image
+            src="/labs/fudan-lamt.PNG"
+            alt="Project Thumbnail"
+            width={600}
+            height={400}
+            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
+            style={{ aspectRatio: "600/400", objectFit: "cover" }}
+          />
+          <div className="bg-background p-4">
+            <h3 className="text-xl font-semibold">Fudan LAMT</h3>
+            <p className="mt-2 text-gray-500">
+              The Fudan University Laboratory of Audio and Music Technology (LAMT) research topics include music AI (information retrieval and generation), computer audition, speech information processing, and audio information security.
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center text-center space-x-10">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
+              <Link href="https://faculty.fudan.edu.cn/weilics/zh_CN/zdylm/644067/list/index.htm">Website</Link>
+          </Button>
+          </div>
+        </div>
+
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
+          <Image
+            src="/labs/fudan-vip.PNG"
+            alt="Project Thumbnail"
+            width={600}
+            height={400}
+            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
+            style={{ aspectRatio: "600/400", objectFit: "cover" }}
+          />
+          <div className="bg-background p-4">
+            <h3 className="text-xl font-semibold">Fudan VIP Lab</h3>
+            <p className="mt-2 text-gray-500">
+              The Video and Image Processor (VIP) Laboratory for Fudan University research focuses on video, image, artificial intelligence, hardware architecture and SoC chip design research. They created the first domestic open source chip website (www.openasic.org), premiered H.264, H.265 video coding chip IP cores; developed the world's first billion-pixel video array camera, and integrated edge-side AI processing algorithms to realize ultra-vision and ultra-wide-area video. VIP Lab is dedicated to the research and technology promotion of violent computing and hardware chip architecture for cutting-edge image/video/AI technology.
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center text-center space-x-10">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
+              <Link href="http://viplab.fudan.edu.cn/">Website</Link>
+          </Button>
+          <Button color="default" variant="flat" startContent={<FaGithub/>}>
+            <Link href="https://github.com/openasic-org">GitHub</Link>
+          </Button>
+          </div>
+        </div>
+
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
+          <Image
+            src="/labs/fudan-can.PNG"
+            alt="Project Thumbnail"
+            width={600}
+            height={400}
+            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
+            style={{ aspectRatio: "600/400", objectFit: "cover" }}
+          />
+          <div className="bg-background p-4">
+            <h3 className="text-xl font-semibold">Fudan CAN Lab</h3>
+            <p className="mt-2 text-gray-500">
+              The Fudan Adaptive Networks and Control (CAN) Lab is led by Professor Xiang Li, their main research topics include temporal networks, social network mining, epidemic dynamics, ECG analysis and synchronization and coordination of complex networking systems. 
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center text-center space-x-10">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
+              <Link href="https://can.fudan.edu.cn/">Website</Link>
+          </Button>
+          </div>
+        </div>
+        
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
+          <Image
+            src="/labs/fudan-dspt.PNG"
+            alt="Project Thumbnail"
+            width={600}
+            height={400}
+            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
+            style={{ aspectRatio: "600/400", objectFit: "cover" }}
+          />
+          <div className="bg-background p-4">
+            <h3 className="text-xl font-semibold">Fudan DSPT Lab</h3>
+            <p className="mt-2 text-gray-500">
+            Based on the theoretical foundation of signal processing and statistical learning, the Fudan DSPT lab conducts academic research in wireless communications and networks, image processing and machine vision, and explores innovative engineering practices on platforms such as electronic systems, sensor networks, multi-rotor vehicles and unmanned systems.  
+
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center text-center space-x-10">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
+              <Link href="https://dspt.fudan.edu.cn/">Website</Link>
+          </Button>
+          </div>
+        </div>
+
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
+          <Image
+            src="/labs/fudan-bz.PNG"
+            alt="Project Thumbnail"
+            width={600}
+            height={400}
+            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
+            style={{ aspectRatio: "600/400", objectFit: "cover" }}
+          />
+          <div className="bg-background p-4">
+            <h3 className="text-xl font-semibold">Fudan BZ Lab</h3>
+            <p className="mt-2 text-gray-500">
+            The Fudan BZ Lab is a team of researchers and industry practitioners focusing on cloud computing and mobile computing. In particular, they work on new tools, platforms, and concepts towards solving software performance, security, usability, and reliability issues.
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center text-center space-x-10">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
+              <Link href="http://y-droid.com/yz/">Website</Link>
+          </Button>
+          </div>
+        </div>
+
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
+          <Image
+            src="/labs/fudan-medianet.PNG"
+            alt="Project Thumbnail"
+            width={600}
+            height={400}
+            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
+            style={{ aspectRatio: "600/400", objectFit: "cover" }}
+          />
+          <div className="bg-background p-4">
+            <h3 className="text-xl font-semibold">Fudan Multimedia and Mobile Networking Group</h3>
+            <p className="mt-2 text-gray-500">
+            The Fudan Multimedia and Mobile Networking (MediaNET) group is an active research group focusing on theory and system for distributed AI. In particular, they are working on foundation model training (scheduling/parallelism/xCCL/RDMA/operation) and inference systems. Their research also includes the performance evaluation, control, and economic analysis of computer networks.
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center text-center space-x-10">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
+              <Link href="https://medianet.azurewebsites.net">Website</Link>
+          </Button>
+          </div>
+        </div>
+
+
+
       </div>
     </>
   );
