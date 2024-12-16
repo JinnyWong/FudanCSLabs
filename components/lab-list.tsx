@@ -742,7 +742,31 @@ export default function LabList() {
           </div>
         </div>
 
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
+          <Image
+            src="/labs/fudan-datanet.PNG"
+            alt="Project Thumbnail"
+            width={600}
+            height={400}
+            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
+            style={{ aspectRatio: "600/400", objectFit: "cover" }}
+          />
+          <div className="bg-background p-4">
+            <h3 className="text-xl font-semibold">Fudan Big Data and Networking Group</h3>
+            <p className="mt-2 text-gray-500">
+              The Fudan Big Data and Networking (DataNET) group led by Professor Yang Chen  engages in research of big data and networking, online social networks, the Internet, mobile cloud computing and other related fields.
+            </p>
+          </div>
 
+          <div className="flex items-center justify-center text-center space-x-10">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
+              <Link href="https://fudan-datanet.mysxl.cn/">Website</Link>
+          </Button>
+          <Button color="default" variant="flat" startContent={<FaGithub/>}>
+            <Link href="https://github.com/easy-graph/Easy-Graph">GitHub</Link>
+          </Button>
+          </div>
+        </div>
 
       </div>
     </>
