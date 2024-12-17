@@ -31,7 +31,7 @@ export default function LabList() {
               Fudan Data Science and Social Computing Lab
             </h3>
             <p className="mt-2 text-gray-500">
-              Fudan Data Intelligence and Social Computing (Fudan DISC) Lab aims
+              Fudan Data Intelligence and Social Computing (DISC) Lab aims
               to develop novel natural language processing and machine learning
               models and algorithms, and explores applications of human-computer
               collaboration and interaction in real environments.
@@ -59,7 +59,7 @@ export default function LabList() {
           <div className="bg-background p-4">
             <h3 className="text-xl font-semibold">Fudan CIS Lab</h3>
             <p className="mt-2 text-gray-500">
-              Fudan CISL research topics include human-centered cooperative
+              Fudan CIS Lab research topics include human-centered cooperative
               computing, Computer Supported Cooperative Work(CSCW) & social
               computing, human computer interaction, human-centered AGI
               algorithms and systems, such as wearable-interactive AGI and AI
@@ -167,7 +167,7 @@ export default function LabList() {
           <div className="bg-background p-4">
             <h3 className="text-xl font-semibold">Fudan System Software & Security Lab </h3>
             <p className="mt-2 text-gray-500">
-            Fudan System Software & Security Lab research mainly focues on cybersecurity, including mobile application security, malware detection and applied AI security.
+            Fudan System Software & Security Lab research mainly focuses on cybersecurity, including mobile application security, malware detection and applied AI security.
             </p>
           </div>
 
@@ -584,9 +584,9 @@ export default function LabList() {
             style={{ aspectRatio: "600/400", objectFit: "cover" }}
           />
           <div className="bg-background p-4">
-            <h3 className="text-xl font-semibold">Fudan DSG Lab</h3>
+            <h3 className="text-xl font-semibold">Fudan Laboratory for Data Security and Governance</h3>
             <p className="mt-2 text-gray-500">
-              The Fudan Laboratory for Data Security and Governance does research in data security and privacy computing, and has constructed software platforms in secure multi-party learning frameworks and platforms, crypto-asset ecological regulation and innovative technologies, and user password security. 
+              The Fudan Laboratory for Data Security and Governance (DSG Lab) does research in data security and privacy computing, and has constructed software platforms in secure multi-party learning frameworks and platforms, crypto-asset ecological regulation and innovative technologies, and user password security. 
             </p>
           </div>
 
@@ -610,7 +610,7 @@ export default function LabList() {
             style={{ aspectRatio: "600/400", objectFit: "cover" }}
           />
           <div className="bg-background p-4">
-            <h3 className="text-xl font-semibold">Fudan LAMT</h3>
+            <h3 className="text-xl font-semibold">Fudan Laboratory of Audio and Music Technology</h3>
             <p className="mt-2 text-gray-500">
               The Fudan University Laboratory of Audio and Music Technology (LAMT) research topics include music AI (information retrieval and generation), computer audition, speech information processing, and audio information security.
             </p>
@@ -633,9 +633,9 @@ export default function LabList() {
             style={{ aspectRatio: "600/400", objectFit: "cover" }}
           />
           <div className="bg-background p-4">
-            <h3 className="text-xl font-semibold">Fudan VIP Lab</h3>
+            <h3 className="text-xl font-semibold">Fudan Video and Image Processor Lab</h3>
             <p className="mt-2 text-gray-500">
-              The Video and Image Processor (VIP) Laboratory for Fudan University research focuses on video, image, artificial intelligence, hardware architecture and SoC chip design research. They created the first domestic open source chip website (www.openasic.org), premiered H.264, H.265 video coding chip IP cores; developed the world's first billion-pixel video array camera, and integrated edge-side AI processing algorithms to realize ultra-vision and ultra-wide-area video. VIP Lab is dedicated to the research and technology promotion of violent computing and hardware chip architecture for cutting-edge image/video/AI technology.
+            The Video and Image Processor (VIP) Laboratory for Fudan University research focuses on video, image, artificial intelligence, hardware architecture and SoC chip design research. They created the first domestic open source chip website (www.openasic.org), premiered H.264, H.265 video coding chip IP cores; developed the world's first billion-pixel video array camera, and integrated edge-side AI processing algorithms to realize ultra-vision and ultra-wide-area video. VIP Lab is dedicated to the research and technology promotion of violent computing and hardware chip architecture for cutting-edge image/video/AI technology.
             </p>
           </div>
 
@@ -649,9 +649,10 @@ export default function LabList() {
           </div>
         </div>
 
+        
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
           <Image
-            src="/labs/fudan-can.PNG"
+            src="/labs/fudan-inc.PNG"
             alt="Project Thumbnail"
             width={600}
             height={400}
@@ -659,18 +660,19 @@ export default function LabList() {
             style={{ aspectRatio: "600/400", objectFit: "cover" }}
           />
           <div className="bg-background p-4">
-            <h3 className="text-xl font-semibold">Fudan CAN Lab</h3>
+            <h3 className="text-xl font-semibold">Fudan Intelligent Networking and Computing Research Centre</h3>
             <p className="mt-2 text-gray-500">
-              The Fudan Adaptive Networks and Control (CAN) Lab is led by Professor Xiang Li, their main research topics include temporal networks, social network mining, epidemic dynamics, ECG analysis and synchronization and coordination of complex networking systems. 
+            The Intelligent Networking and Computing Research Centre is committed to conducting cutting-edge exploration and applied basic research. In view of the challenges of the future space Internet, they explore new theories and methods of network and computing, break through the research boundaries of network layer and physical layer, cross integrate with life science and other disciplines, and cultivate compound scientific and technological talents. Their main research interests include cloud native network, space-air-ground integrated network, intelligent spectrum sensing.
             </p>
           </div>
 
           <div className="flex items-center justify-center text-center space-x-10">
           <Button color="default" variant="flat" startContent={<CiGlobe/>}>
-              <Link href="https://can.fudan.edu.cn/">Website</Link>
+              <Link href="https://inc.fudan.edu.cn/incenglish/">Website</Link>
           </Button>
           </div>
         </div>
+        
         
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
           <Image
@@ -685,7 +687,6 @@ export default function LabList() {
             <h3 className="text-xl font-semibold">Fudan DSPT Lab</h3>
             <p className="mt-2 text-gray-500">
             Based on the theoretical foundation of signal processing and statistical learning, the Fudan DSPT lab conducts academic research in wireless communications and networks, image processing and machine vision, and explores innovative engineering practices on platforms such as electronic systems, sensor networks, multi-rotor vehicles and unmanned systems.  
-
             </p>
           </div>
 
@@ -767,6 +768,79 @@ export default function LabList() {
           </Button>
           </div>
         </div>
+
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
+          <Image
+            src="/labs/fudan-cih.png"
+            alt="Project Thumbnail"
+            width={600}
+            height={400}
+            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
+            style={{ aspectRatio: "600/400", objectFit: "cover" }}
+          />
+          <div className="bg-background p-4">
+            <h3 className="text-xl font-semibold">Fudan Custom Intelligent Hardware Lab</h3>
+            <p className="mt-2 text-gray-500">
+            Fudan Custom Intelligent Hardware (CIH) Lab's objective is to develop intelligent hardware, from chips to systems, for emerging applications. They target efficient in-memory and processing circuits and system designs for smart sensors and agile AI/analog deployment on VLSI. 
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center text-center space-x-10">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
+              <Link href="https://cihlab.github.io/">Website</Link>
+          </Button>
+          <Button color="default" variant="flat" startContent={<FaGithub/>}>
+            <Link href="https://github.com/cihlab">GitHub</Link>
+          </Button>
+          </div>
+        </div>
+
+
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
+          <Image
+            src="/labs/fudan-can.PNG"
+            alt="Project Thumbnail"
+            width={600}
+            height={400}
+            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
+            style={{ aspectRatio: "600/400", objectFit: "cover" }}
+          />
+          <div className="bg-background p-4">
+            <h3 className="text-xl font-semibold">Fudan Adaptive Networks and Control Lab</h3>
+            <p className="mt-2 text-gray-500">
+              The Fudan Adaptive Networks and Control (CAN) Lab is led by Professor Xiang Li, their main research topics include temporal networks, social network mining, epidemic dynamics, ECG analysis and synchronization and coordination of complex networking systems. 
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center text-center space-x-10">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
+              <Link href="https://can.fudan.edu.cn/">Website</Link>
+          </Button>
+          </div>
+        </div>  
+
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
+          <Image
+            src="/labs/fudan-sklics.png"
+            alt="Project Thumbnail"
+            width={600}
+            height={400}
+            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
+            style={{ aspectRatio: "600/400", objectFit: "cover" }}
+          />
+          <div className="bg-background p-4">
+            <h3 className="text-xl font-semibold">Fudan State Key Laboratory of Integrated Chips and Systems</h3>
+            <p className="mt-2 text-gray-500">
+            The Fudan State Key Laboratory of Integrated Chips and Systems (SKLICS) focuses on the critical field of integrated chips and systems, aiming to produce high-end chips using independent processes and EDA tools. Their research focus includes, "Integrated Chip and System Applications," which aims to address key issues unique to integrated chips; "Key IP and Chip Architecture," "Design Methodology and EDA Tools," and "New Methods for 3D Integrated Chip Manufacturing and Testing."
+            </p>
+          </div>
+          <div className="flex items-center justify-center text-center space-x-10">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
+              <Link href="https://sklics.fudan.edu.cn/">Website</Link>
+          </Button>
+          </div>
+        </div>  
+
 
       </div>
     </>
