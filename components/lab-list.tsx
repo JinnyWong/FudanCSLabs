@@ -216,7 +216,7 @@ export default function LabList() {
           <div className="bg-background p-4">
             <h3 className="text-xl font-semibold">Fudan Multimedia & Artifical Intelligence Security Lab</h3>
             <p className="mt-2 text-gray-500">
-            Fudan Multimedia & Artificial Intelligence Lab research focuses on multimedia and artificial intelligence security, including topics of information hiding, multimedia forensics, artificial intelligence and multimedia applications.
+            Fudan Multimedia & Artificial Intelligence Security (MAS) Lab research focuses on multimedia and artificial intelligence security, including topics of information hiding, multimedia forensics, artificial intelligence and multimedia applications.
             </p>
           </div>
 
@@ -839,7 +839,59 @@ export default function LabList() {
               <Link href="https://sklics.fudan.edu.cn/">Website</Link>
           </Button>
           </div>
-        </div>  
+        </div> 
+
+
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
+          <Image
+            src="/labs/fudan-kw.png"
+            alt="Project Thumbnail"
+            width={600}
+            height={400}
+            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
+            style={{ aspectRatio: "600/400", objectFit: "cover" }}
+          />
+          <div className="bg-background p-4">
+            <h3 className="text-xl font-semibold">Fudan Knowledge Work Lab</h3>
+            <p className="mt-2 text-gray-500">
+            Fudan Knowledge Work (KW) Lab led Prof. Yanghua Xiao, focuses on the research of various large-scale knowledge graph construction, management and application theories and methods. They aim to build large-scale, high-quality knowledge graphs that can meet the needs of machine language cognition, and promotes the in-depth application of knowledge graphs in the fields of text comprehension, intelligent search, and machine brain as its main mission.
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center text-center space-x-10">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
+              <Link href="http://kw.fudan.edu.cn/">Website</Link>
+          </Button>
+          <Button color="default" variant="flat" startContent={<FaGithub/>}>
+            <Link href="https://github.com/GDMKnowledgeWorks">GitHub</Link>
+          </Button>
+          </div>
+        </div>
+
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl p-6 space-y-4">
+          <Image
+            src="/labs/fudan-das.PNG"
+            alt="Project Thumbnail"
+            width={600}
+            height={400}
+            className="h-64 w-full object-cover transition-all duration-300 group-hover:scale-105 rounded-xl"
+            style={{ aspectRatio: "600/400", objectFit: "cover" }}
+          />
+          <div className="bg-background p-4">
+            <h3 className="text-xl font-semibold">Fudan Laboratory for Data Analytics and Security</h3>
+            <p className="mt-2 text-gray-500">
+            Fudan Laboratory for Data Analytics and Security (DASLAB) focuses on research in parallel processing, big data analysis and data-driven security systems.
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center text-center space-x-10">
+          <Button color="default" variant="flat" startContent={<CiGlobe/>}>
+              <Link href="https://daslab.fudan.edu.cn/">Website</Link>
+          </Button>
+          </div>
+        </div>
+
+
 
 
       </div>
